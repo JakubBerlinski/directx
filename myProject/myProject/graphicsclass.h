@@ -1,7 +1,7 @@
 #ifndef _GRAPHICSCLASS_H_
 #define _GRAPHCISCLASS_H_
 
-#include <Windows.h>
+#include "d3dclass.h"
 
 const bool FULL_SCREEN = false;
 const bool VSYNC_ENABLED = true;
@@ -20,6 +20,8 @@ public:
 
 private:
 	bool render();
+
+	d3dClass* m_D3D;
 };
 
 #endif
